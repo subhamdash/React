@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+  }
+  .apac
+  {
+    font-size: 550%;
+    text-align: center;
+
+  }
+  .mod-link
+  {
+    font-size: 550%;
+    color: black;
+    margin: auto;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  a {
+    color:black;
+  text-decoration: none;
+}

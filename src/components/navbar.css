@@ -19,7 +19,7 @@
     background-color: rgba(0, 0, 0, 0.788);
     color: whitesmoke;
     display: grid;
-    font-size: 300%;
+    font-size: 400%;
     align-items: center;
     justify-content: space-around;
     grid-row: 1/2;
@@ -50,7 +50,12 @@
     justify-content: space-around;
     align-items: center;
   }
-
+.Main-Para{
+  font-size: 750%;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+}
   .Mid-nav {
     background-color:rgb(255, 255, 255);
   width: 100%;
