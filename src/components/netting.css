@@ -4,19 +4,13 @@
     box-sizing: border-box;
     font-family: "Jost", sans-serif;
   }
-  .apac
-  {
-    font-size: 550%;
-    text-align: center;
-
-
-  }
-  .mod-link
+  
+  .nett-link
   {
     font-size: 550%;
     color: black;
     margin: auto;
-    text-align: center;
+   margin-left: 5%;
     margin-top: 10%;
   }
 
@@ -24,22 +18,29 @@
     color:black;
   text-decoration: none;
 }
-.emea
-{
-  font-size: 550%;
-  text-align: center;
 
+.nett-link ul {
+    row-gap: 12px;
+    height: 10rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+  }
 
-}
-.amer
-{
-  font-size: 550%;
-  text-align: center;
-
-
-}
 .Netting
 {
   font-size: 550%;
   text-align: center;
+}
+.buttonw
+{
+    font-size: 50%;
+    align-items: center;
+    position: absolute;
+    right: 500px;
+
+
+
+
+
 }

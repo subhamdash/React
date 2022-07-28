@@ -1,10 +1,12 @@
 
 import './App.css';
-import Navbar from './components/Navbar';
+import {Navbar,HomePage} from './components/Navbar';
 import Amer from './components/AMER';
 import Emea from './components/EMEA';
 import Apac from './components/APAC';
 import Netting from './components/NETTING';
+import Home from './Home';
+
 
 import {
   BrowserRouter ,
@@ -12,20 +14,22 @@ import {
   Route
 
 } from "react-router-dom";
+import HERO from './components/HERO';
 
 function App() {
   return (
 <>
     <BrowserRouter>
-      <Routes>
-         <Route path="/" element={<Navbar /> } > 
-          <Route path="Amer" element={<Amer /> } /> 
-          <Route path="Emea" element={<Emea /> } /> 
-          <Route path="Apac" element={<Apac /> } />
-       
-         </Route>
-      </Routes>
+    <HomePage />
+    <Navbar /> 
+    <Routes>
+        <Route path='/' element={<Home />} />
+  
+   
+        </Routes>
+
     </BrowserRouter>
+    
 
   </>
 
