@@ -1,16 +1,23 @@
 import React from 'react'
 import './netting.css';
 
+
+
 const Netting = () => {
+
     return (
         <>
+
+        
              <h1 className="Netting">Netting</h1>
             <div className="nett-link">
                   {/*2nd menu part */}
                   <ul>
                     <li >
                         SWA
-                        <button className='buttonw'>Upload</button>  
+                        { /*<label for="inputw" class="btn">Select Image</label> */}
+                        <input id ="files" type="file"  className='inputw'/>
+                        <button className='buttonw' >Upload</button>  
                     </li>
 
                     <li>
@@ -37,5 +44,4 @@ const Netting = () => {
         </>
     )
 }
-
 export default Netting

@@ -2,10 +2,10 @@ import React from 'react';
 import './navbar.css';
 import { Outlet,Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import Netting from './NETTING';
 import Amer from './AMER';
 import Emea from './EMEA';
-import Apac from './APAC';
+import Apac from './APAC'
+import Netting  from './NETTING';
 import {
     BrowserRouter ,
     Routes,
@@ -26,9 +26,7 @@ import HERO from './HERO';
 const Navbar = () => {
     return (
         <>
-           
-       
-         
+
           <nav className="Main-nav">  
           
               <div className="menu-link">
@@ -36,7 +34,7 @@ const Navbar = () => {
                   <ul >
                     <li>
                         
-                        <Link to="/APAC">APAC</Link>
+                        <Link to="Apac">APAC</Link>
 
                     </li>
                     <li>
@@ -50,13 +48,13 @@ const Navbar = () => {
               </div>
               
           </nav>
-        
-        <Routes>
-        <Route path="Amer" element={<Amer /> } /> 
-        <Route path="Emea" element={<Emea /> } /> 
-        <Route path="Apac" element={<Apac /> } />
-        <Route path="Netting" element={<Netting /> } />  
-        </Routes>
+
+          {/* <Routes>
+            <Route path="/Amer"  element={<Amer /> } /> 
+            <Route path="/Emea"  element={<Emea /> } /> 
+            <Route exact path="Apac/*"  element={<Apac />} />
+         </Routes>  */}
+      
 
    
 

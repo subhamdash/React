@@ -39,8 +39,14 @@
     position: absolute;
     right: 500px;
 
-
-
-
+}
+.inputw
+{
+  font-size: 40%;
+  align-items: center;
+  position: absolute;
+  right: 500px;
+  font-display: none;
+  z-index: 2;
 
 }

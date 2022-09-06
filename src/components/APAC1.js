@@ -1,20 +1,9 @@
-import React from 'react'
+import { Link, Outlet } from 'react-router-dom';
+import {Navbar,HomePage} from './Navbar';
 import './APAC.css';
-import { Outlet,Link } from 'react-router-dom';
-import Netting from './NETTING';
-import {
-    BrowserRouter ,
-    Routes,
-    Route,
-    useMatch
-  
-  } from "react-router-dom";
-
-const Apac = () =>  {
-
-
-    return (
-        <>
+const Home = () => {
+  return (
+    <>
             <h1 className="apac">APAC</h1>
             <div className="mod-link">
                   {/*2nd menu part */}
@@ -24,7 +13,7 @@ const Apac = () =>  {
                     </li>
 
                     <li>
-                        <Link to="CTAC"> CTAC</Link>
+                        <Link to="/CTAC"> CTAC</Link>
                     </li>
 
                     <li>
@@ -39,17 +28,9 @@ const Apac = () =>  {
                 </ul>
                   
               </div>
-              <Outlet />
               
 
-        <Routes>
-        <Route path="/Netting" element={<Netting />} />  
-
-        </Routes>
-
-            
-        </>
-    )
-}
-
-export default Apac
+    </>
+  );
+};
+export default Home;
