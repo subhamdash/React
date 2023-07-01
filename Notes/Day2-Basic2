@@ -1,0 +1,31 @@
+npx- we have to execute a parcel from a entry point 
+If we don't have CDN Link we will run into some issue
+You  an import it from react-dom if you want
+react is core package and react-dom is dom pacakage
+
+Hot module Reloading is what makes parcel speical as it's refresh the page automatically
+File Watcher Algortihm -c++
+npx parcel build index.html
+ parcel uses consistent hasing 
+
+
+* HMR - Hot Module Reloading
+* File Watcher algorithm - CH
+* BUNDLING
+* MINIFY
+* CLeaning our Code
+* Dev abd Production Build
+* Super Fast build algorithm
+* Image Optimizytion
+* Caching while development
+* Compression
+* Compatble with older version of browser
+* HTTPS on dev
+* port Number
+* Consistent Hashing Algorithm
+* Zero Config
+* Tree-Shanking
+
+//npm init - gives us pacage.json
+//npm i -D parcel to install parcel
+//npx parcel inedx.html // It created Dev-Build and it deoes all the above things

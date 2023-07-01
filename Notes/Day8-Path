@@ -1,0 +1,13 @@
+import {createBroswerRouter } from "react-router-dom";
+
+
+const appRouter=createBroswerRouter(
+    [
+
+    ]
+)
+
+//THere are two types of routing
+Client Side Routing and Server Side Routing
+//But at the end of the day we are using anchor tab in end in browser
+<Outlet /> -- It should cange aaccoridng to the routes

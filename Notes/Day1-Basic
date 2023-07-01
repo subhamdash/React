@@ -1,0 +1,33 @@
+React is a library.
+Emmet-Emmet is a free add-on for your text editor. 
+It allows you to type shortcuts that are then expanded into full pieces of code. 
+We can inject React scripts form CDN. 
+We get two files , react work in multiple decices and version s
+//In arrow function => we get the this refers to the object
+//Window is the global object
+//this is the window
+//call,apply and bind can change this of the function
+//FUnction.prototype.call(this)
+
+//Bundlers- it's web pack .Parcel is a bundler.
+//npm init or yarn 
+//npm- npm doesn't mean node package manager 
+
+
+//Parcel - A package is module which needs a package manager.
+//npm install -D/--save Parcel
+//package.json we are saying about dependices
+//parcel:"2.8.2" we are strictin the version to 2.8.2
+//parcel:"^2.8.2" auto upgarde for any minor update
+//parcel:"~2.8.2" auto upgarde for any major update
+
+//package-lock.json we are getting that there are no carret and tilde in parcel here 
+we are stricting in the lock. 
+//We will push local to git and server get froms git.
+//We check the intergity on the Lock 
+//Ww can generate all the packages/node_module from package-lock.json
+
+
+
+
+

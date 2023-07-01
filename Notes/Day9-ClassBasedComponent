@@ -1,0 +1,14 @@
+React is intially meant to be a Class based method
+
+//Mounting
+//UPdating
+//UnMOunting
+//Intially Mounting takes places, if there are no props and no states there will be zero updates
+//UnMOunting will happen when you go from one phase to another or go from one page to other
+
+
+
+context is like a user-store it can be used anywhere.
+//We can over-ride the default value 
+
+<USerContext.Provider value={{user:user}}>

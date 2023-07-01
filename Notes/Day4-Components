@@ -1,0 +1,48 @@
+// React Component
+
+Everything is a component in react
+ -Functional Component
+ -Class based Component
+
+ //A JS function retrun a react elements or composition of react-elements is known as function Component
+
+ cons HeaderComponent =() =>
+ {
+        retrun <h1> NAMO</h1>;
+        retrun (              //IF we want to return block of statemnt
+            <h1> NaMo </h1>
+            <h1>Nako <h2>
+        );
+
+        //We can skip retrun as well as it is a react function
+ };
+ //Name of the component starts with the capital letters
+
+
+ root.render(<HeaderComponent />)
+If there are two componets one is function component and another one is just normal constatnt then in render
+we need to close the FUnction component in the angular bracket and normal code doesn't need it for that.
+
+const heading =(<h1 id="title" key="h2"> Namaste React</h1>);
+const heading2 =() => (<h1 id="title" key="h2"> Namaste React</h1>);
+
+ const HeaderComponent =() =>
+ {
+        {heading}   //If we make heading as fucntion component then it won't work as it only work variables
+        <heading2 /> // We can do this for fucntions or <heading2()>
+        {} - We can write any piece of Java Script code here, Even if we give some malicious data
+        It sanitizes it to make app secure
+        retrun (              
+            <h1> NaMo </h1>
+            <h1>Nako <h2>
+        
+
+        );
+ };
+
+
+ //Nested Component are know as component-composition
+ // Babel can come from parcel or web-package or else download babel to run the packages
+ //Babel uses the compiler to convert new-code to old-code and the old code is know as PolyFill
+
+

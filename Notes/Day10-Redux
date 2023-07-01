@@ -1,0 +1,107 @@
+Redux Store- It is a big object which have big object.All the components can access the Redux Store.
+We will create a logical store of the store.
+From our UI we cannot directly make any changes in our store.
+We will use dipaatch and action and then it will call a function 
+and then it will modify the cart
+
+
+npm i @reduxjs/toolkit  //
+
+npm i react-redux
+
+
+
+1. First we will build the store (/utils/store.js)
+
+ import {configureStore} from redux-toolkit 
+ const store=configureStore({});
+ export default store
+
+
+2.We have to decide that the stores data is provided to some part of the code or to whole react
+ We have to import provider component
+ //react-redux will give me provider
+ import store
+ import {provider} from "react-redux"
+ We can wrap our whole function in provider
+ <Provider store={store}>
+    //Whole app
+ </Provider>
+  
+3. We will create a slice for out store
+ import {createSlice} from "@reduxjs/toolkit
+ const cartSlice=createSLice({
+     name:"cart",
+     intialState:{
+         items:["banana","apples"],
+     },
+     reducers:{                                 //Reducers doens't return anything it just modifies
+         addItem:(state,action) =>{
+             state.items.push(action.payload);
+         },
+         clearCart:(state) =>{
+             state.items=[];
+         }
+
+     },
+ });
+ 
+ export const {addItem,removeItem,clearCart}=cartSlice.actions;
+
+ export default cartSLice.reducer //reducer not reducers
+ **** We will use thunk here if we needed to 
+
+
+
+
+ 4. Now we have put all the tnhings in store
+
+ import {configureStore} from redux-toolkit 
+ import cartSlice from "./cartSlice";
+ const store=configureStore({
+     reducer:
+     {
+         cart:cartSLice,
+     },
+ });
+ export default store;
+
+
+5. To get the cart items we need to use useSlector Hooks in the cart component
+     It will access to the storeconst CartITems=useSlector(store => store.cart.items);
+
+6.
+We will useDispacth  from react redux
+import {useDisaptch} from "react-redux";
+const dipatch =useDisaptch();
+ 
+ const handleItem= () => {
+     dispatch(addItem("Grapes"));
+ }
+
+
+  
+
+/*
+* Create Store
+*- configureStore() - RTK
+* Provide my stor to app
+* - «Provider store = (store]> - import from react-redux
+*Slice
+* - RTK - createSLice({
+*       name: ""
+*       initialState:
+*       reducers: {
+*           addItem: (state, action)- { state= action.payload}
+*           }
+*       })
+*   export const {additem, removeItem} = cartSlice.actions;
+*   export default cartslice.reducer:
+*Put that slice into Store
+*       -{
+*           reducer:{
+*                    cart:cartSLice,
+*                    user:userSlice
+*    
+*           }    
+*        }

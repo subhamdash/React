@@ -1,0 +1,47 @@
+//If your browser doesn't hape promise so poly fill will convert into into that browser
+//If old broswer doesn't understand Array.map() the poly fill will implements it's code
+function map()
+{
+
+}
+
+babel- It's just a libraray and package . It takes some code and split out some code. Takes new code and 
+covert it old codes as well .
+in package.json we add "parcel index.html" in start scripts 
+//updating something is known as render
+keys are important to load faster
+
+//We  can assign values to js var and that is valid code  jsx code
+// var a =<h1>Hello</h1>
+//Html like syntax ,but not html in js
+//React.creatElement =>Object =>HTML(DOM)
+
+//Difference between html and jsx
+
+//Babel generate AST, Babel reads the code line by line and check angular bracket then it add to AST
+//JSX used React.createElement which converts it into object then HTML DOM
+
+const heading2 = (
+<h1 id-"title" key="h2">
+Namaste React </h1>
+);
+
+Babel Converts form the above code to the below code 
+
+const heading2= React.createElement(
+    "h1",
+    {
+        id: "title",
+        key: "h2",
+    },
+    "Namaste React"
+);
+
+
+
+//THere are two package-lock.json one is normal and there is another in node module
+
+JSX- It's a syntax or expression
+
+
+

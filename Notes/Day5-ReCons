@@ -1,0 +1,65 @@
+//<Title /> or <Title></Title> or {Title()} all three will work
+
+const jsx=(
+    <div>
+    <h1> JSX </h1>
+    <h1> Second JSX </h1>
+    </div>
+)
+//In any jsx compoment there should be only one parent element
+//Jsx should have only one parent , if you want more then go for div but we will get more head 
+//we can use <React.Fragemnt> which is an empty tag
+
+//React.Fragemnt is a component which is exported by React
+
+const jsx=(
+    <React.Fragemnt>
+    <h1> JSX </h1>
+    <h1> Second JSX </h1>
+    </React.Fragemnt>
+)
+
+//Configure Driven UI
+
+//props are know as properties . 
+
+cosnt RestCard =(props) =>
+{
+    props.resturant.data 
+}
+
+
+cosnt RestCard =({resturant}) =>  //We are de-structuring the data
+{
+
+    props.resturant.data 
+}
+
+const {name, rating}=resturant.data
+
+
+//If I want to destrucutre everything on the fly 
+// Use the fucking spread operator(...resturant[0]) this will help to pass the param to args
+
+
+//<head>
+//<body>
+//  <Rest 1>
+//  <Rest 2> <img>
+</body>
+
+
+We keep a representation of dom . We need virtaul-dom in react as it is needed for re-concilation 
+Reconcilation is diff algorithm b/w two Doms(Virtaul Doms and Real Dom)
+
+            1
+           /
+          2   --- We just need to change only this virtual dom 
+         /
+        3  
+
+// if there are 4 div's and another div comes up then it will fist get confused b/w real-dom and virtual don
+//will re-render everything from the beginging
+//so if we have some keys then it will re-render with only new one
+//Never uses index as keys
+

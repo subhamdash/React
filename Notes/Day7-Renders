@@ -1,0 +1,27 @@
+//IF we care calling an fetch inside a functional component everytime we re-render
+//IF user loads the website a mebsite ==>calls the API ==> Render Page()
+                                            (200ms)             (500ms)
+Loads ==>render the page =====>API ====>Update UI
+            100ms               300mm      500ms
+
+Due to Reconcilation 
+
+How do we call useEffect function.
+We call this function by passing another function to it
+
+useEffect( 
+   { () => }
+)
+We use another function to call a useEffect as it is call back funciton.
+It will not be called immediately but whenever the use-effect needed to be called.
+When ever the component reders and re-renders or when state or prop is changed
+ If you don't want it to re-render everytime then pass a dependices array
+
+useEffect( 
+    () =>{ console.log("new world")},[ searchText]
+);
+//Call this only when my searchText is changed
+
+//shiimer UI - We place a skeleton of before the api is coming into the picture 
+eg:-Youtube and Swiggy
+

@@ -1,0 +1,74 @@
+When we export default is like just returning a function it's like closure 
+We can have two react function components then we can export directly
+Export default - export default Emea -- This is a deault export so we default export
+Named import you have to use {Emea} curly braches for named export
+{} - The curly braces are not destrucring here
+import Header, {TItle}  from "./components/header"  --This is also correct 
+
+In defualt export we don't need the react the import and export name shouldn't be statem
+WE can use header.js or header 
+If we re-name and .jsx it is not problems, 
+
+import * as XYZ from "./components/header"
+
+then we can do 
+<XYZ.Header /> this is sim;are to <React.Fragemnt>
+
+
+
+We put all the hardcoded things to config files.
+
+
+In react there is one-way data binding,In Angular there is two-way data binding
+
+
+
+
+const Boday =() =>
+{
+    let text="KFC";
+    return (
+    <>
+        <div className="Scontainer">
+            <input 
+            type="text"
+            value={text}
+            onChange={(e) =>
+            {
+                setSearchText(e.target.value);
+
+                value=e.target.value
+            } }
+            />
+        </div>
+    </>
+    );
+}
+
+
+Here in the above code even if we type something in the react code it won't work,
+If we need a varaible that changes that is know as react-variable.
+
+## const [searchText] =useState(); //We will get useState from react
+retruns=[variable Name, function to update];
+
+so hooks are nothing but java scipt function.
+const [searchTextInput,setSearchText]= useState("KFC");
+
+
+//We are reading and writing same time , this is known as two-way binding
+React won't know change the values of var,let and const and it won't affect and I think it's not present
+in DOM object.
+
+in on click we can give function 
+={ () => { setSearch("Hello")} }
+
+
+React renders the whole component when ever the react changes
+
+
+
+
+
+ 
+ 
