@@ -1,8 +1,12 @@
-console.log(x); //undefined
+// console.log(wwe)
+// const wwe=100
+
+console.log(x);
+var x=7;
 getName();  // undefined "Hello WOrld"
 console.log(getName);  //It will give us funtion whole function as it is
 console.log(getName());//Hellow WOrld 
-var x=7;
+
 function getName()
 {
     console.log(y);
